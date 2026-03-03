@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Gal_22",
+    "gamemode": "Survival",
+    "rango": "Admin",
+    "mundo": "world",
+    "vida": 20,
+    "comida": 18,
+    "coordenadas": { "x": 125, "y": 64, "z": -342 },
+    "respawn": { "mundo": "world", "x": 120, "y": 64, "z": -350 },
+    "ultimaMuerte": { "mundo": "nether", "x": -22, "y": 64, "z": 18, "causa": "Lava", "fecha": "2026-03-01 23:41" }
+  },
+  {
+    "id": 2,
+    "name": "RedstonePro",
+    "gamemode": "Survival",
+    "rango": "VIP",
+    "mundo": "nether",
+    "vida": 14,
+    "comida": 16,
+    "coordenadas": { "x": -78, "y": 70, "z": 210 },
+    "respawn": { "mundo": "world", "x": 300, "y": 65, "z": 90 },
+    "ultimaMuerte": { "mundo": "world", "x": 280, "y": 63, "z": 110, "causa": "Creeper", "fecha": "2026-03-02 12:05" }
+  },
+  {
+    "id": 3,
+    "name": "Miner_92",
+    "gamemode": "Adventure",
+    "rango": "Jugador",
+    "mundo": "end",
+    "vida": 8,
+    "comida": 10,
+    "coordenadas": { "x": 12, "y": 55, "z": -8 },
+    "respawn": { "mundo": "world", "x": 0, "y": 64, "z": 0 },
+    "ultimaMuerte": { "mundo": "end", "x": 40, "y": 62, "z": -15, "causa": "Void", "fecha": "2026-03-02 18:22" }
+  },
+  {
+    "id": 4,
+    "name": "AxeLuna",
+    "gamemode": "Creative",
+    "rango": "Mod",
+    "mundo": "world",
+    "vida": 20,
+    "comida": 20,
+    "coordenadas": { "x": -340, "y": 72, "z": 980 },
+    "respawn": { "mundo": "world", "x": -335, "y": 72, "z": 975 },
+    "ultimaMuerte": { "mundo": "world", "x": -410, "y": 38, "z": 1002, "causa": "Caída", "fecha": "2026-03-01 09:10" }
+  },
+  {
+    "id": 5,
+    "name": "CreeperKiller",
+    "gamemode": "Survival",
+    "rango": "Jugador",
+    "mundo": "world",
+    "vida": 6,
+    "comida": 7,
+    "coordenadas": { "x": 45, "y": 12, "z": -220 },
+    "respawn": { "mundo": "world", "x": 50, "y": 63, "z": -200 },
+    "ultimaMuerte": { "mundo": "world", "x": 60, "y": 15, "z": -215, "causa": "Esqueleto", "fecha": "2026-03-02 02:14" }
+  },
+  {
+    "id": 6,
+    "name": "PixelBuilder",
+    "gamemode": "Creative",
+    "rango": "VIP",
+    "mundo": "world",
+    "vida": 18,
+    "comida": 14,
+    "coordenadas": { "x": 640, "y": 69, "z": 120 },
+    "respawn": { "mundo": "world", "x": 642, "y": 69, "z": 118 },
+    "ultimaMuerte": { "mundo": "nether", "x": 10, "y": 72, "z": -90, "causa": "Ghast", "fecha": "2026-03-01 16:33" }
+  },
+  {
+    "id": 7,
+    "name": "NetherRunner",
+    "gamemode": "Survival",
+    "rango": "Jugador",
+    "mundo": "nether",
+    "vida": 10,
+    "comida": 12,
+    "coordenadas": { "x": -15, "y": 82, "z": 33 },
+    "respawn": { "mundo": "world", "x": 220, "y": 64, "z": 70 },
+    "ultimaMuerte": { "mundo": "nether", "x": -5, "y": 70, "z": 40, "causa": "Blaze", "fecha": "2026-03-02 20:01" }
+  },
+  {
+    "id": 8,
+    "name": "EnderScout",
+    "gamemode": "Spectator",
+    "rango": "Jugador",
+    "mundo": "end",
+    "vida": 16,
+    "comida": 9,
+    "coordenadas": { "x": 210, "y": 60, "z": 210 },
+    "respawn": { "mundo": "world", "x": -120, "y": 64, "z": 45 },
+    "ultimaMuerte": { "mundo": "end", "x": 198, "y": 62, "z": 190, "causa": "Enderman", "fecha": "2026-03-02 08:49" }
+  },
+  {
+    "id": 9,
+    "name": "FarmMaster",
+    "gamemode": "Survival",
+    "rango": "Mod",
+    "mundo": "world",
+    "vida": 12,
+    "comida": 20,
+    "coordenadas": { "x": -905, "y": 63, "z": 405 },
+    "respawn": { "mundo": "world", "x": -900, "y": 63, "z": 410 },
+    "ultimaMuerte": { "mundo": "world", "x": -880, "y": 52, "z": 460, "causa": "Ahogamiento", "fecha": "2026-02-28 21:17" }
+  },
+  {
+    "id": 10,
+    "name": "SkyDig",
+    "gamemode": "Adventure",
+    "rango": "Jugador",
+    "mundo": "world",
+    "vida": 4,
+    "comida": 6,
+    "coordenadas": { "x": 5, "y": 110, "z": -999 },
+    "respawn": { "mundo": "world", "x": 10, "y": 64, "z": -990 },
+    "ultimaMuerte": { "mundo": "world", "x": 8, "y": 118, "z": -1002, "causa": "Caída", "fecha": "2026-03-02 19:30" }
+  }
+]

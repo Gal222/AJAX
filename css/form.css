@@ -1,0 +1,222 @@
+/* =========================
+   CSS FORMULARIO (estilo neón / sci-fi como tu acordeón)
+   - Pensado para un formulario con inputs, selects, radios/checkboxes,
+     mensajes .error y botón submit deshabilitado/habilitado.
+   ========================= */
+
+/* Reset básico */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body{
+  margin: 0;
+  padding: 24px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: radial-gradient(1200px 700px at 20% 10%, rgba(0,212,255,0.12), transparent 60%),
+              radial-gradient(1000px 700px at 90% 20%, rgba(0,212,255,0.08), transparent 55%),
+              linear-gradient(180deg, #070b14 0%, #0b1324 55%, #070b14 100%);
+  color: #d4f8ff;
+}
+
+/* Título del sitio (h1) */
+h1, #siteName{
+  margin: 0 0 18px 0;
+  font-size: 2.4rem;
+  color: #00d4ff;
+  text-shadow: 0 0 0.45rem #00d4ff;
+}
+
+/* Contenedor del formulario */
+form{
+  max-width: 780px;
+  margin: 40px auto;
+  padding: 18px 18px 22px;
+  border-radius: 14px;
+
+  background: rgba(10, 20, 40, 0.62);
+  border: 1px solid rgba(0, 212, 255, 0.45);
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.55),
+    0 0 1.1rem rgba(0,212,255,0.12);
+  backdrop-filter: blur(5px);
+}
+
+/* Fieldsets (si los usas) */
+fieldset{
+  margin: 14px 0;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 212, 255, 0.35);
+  background: rgba(10, 20, 40, 0.40);
+}
+
+legend{
+  padding: 0 10px;
+  color: #00d4ff;
+  text-shadow: 0 0 0.35rem #00d4ff;
+  font-weight: 700;
+}
+
+/* Labels */
+label{
+  display: block;
+  margin: 10px 0 6px;
+  color: #d4f8ff;
+  font-weight: 600;
+}
+
+/* Texto normal dentro del formulario */
+form p{
+  margin: 8px 0 0;
+}
+
+/* Inputs y select */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea{
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  border-radius: 12px;
+
+  border: 1px solid rgba(0, 212, 255, 0.45);
+  background: rgba(15, 25, 45, 0.78);
+  color: #d4f8ff;
+
+  outline: none;
+  transition: 0.25s ease;
+  box-shadow: inset 0 0 0.6rem rgba(0, 212, 255, 0.08);
+}
+
+select{
+  cursor: pointer;
+}
+
+/* Focus con glow */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus{
+  border-color: #00d4ff;
+  box-shadow:
+    0 0 1.1rem rgba(0, 212, 255, 0.28),
+    inset 0 0 0.75rem rgba(0, 212, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+/* Estado inválido (si lo marcas con clase) */
+.is-invalid{
+  border-color: rgba(255, 77, 77, 0.9) !important;
+  box-shadow: 0 0 1rem rgba(255, 77, 77, 0.18) !important;
+}
+
+/* Checkbox y radio: simples y legibles */
+input[type="checkbox"],
+input[type="radio"]{
+  transform: scale(1.08);
+  accent-color: #00d4ff;
+  margin-right: 0.45rem;
+}
+
+/* Para poner opciones en línea (radios/checkboxes) */
+.inline{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 8px 14px 0 0;
+  font-weight: 500;
+}
+
+/* Mensajes */
+.error{
+  color: #ff4d4d;
+  text-shadow: 0 0 0.35rem rgba(255, 77, 77, 0.35);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.ok{
+  color: #43ff9a;
+  text-shadow: 0 0 0.35rem rgba(67, 255, 154, 0.35);
+  font-weight: 700;
+}
+
+/* Link (términos) */
+a{
+  color: #00d4ff;
+  text-decoration: underline;
+  text-shadow: 0 0 0.35rem rgba(0, 212, 255, 0.3);
+}
+a:hover{
+  color: #ffffff;
+}
+
+/* Botón submit (estética igual que tu .accordion) */
+button,
+input[type="submit"]{
+  width: 100%;
+  margin-top: 16px;
+  padding: 0.95rem 1rem;
+  border-radius: 12px;
+
+  border: 1px solid #00d4ff;
+  background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+  color: #00d4ff;
+
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-align: center;
+
+  cursor: url("./espada.cur"), pointer;
+  text-shadow: 0 0 0.4rem #00d4ff;
+
+  box-shadow:
+    0 0 0.65rem rgba(0, 212, 255, 0.3),
+    0 10px 22px rgba(0,0,0,0.45);
+
+  transition: 0.25s ease;
+}
+
+button:hover,
+input[type="submit"]:hover{
+  background: linear-gradient(135deg, #16213e 0%, #1a3a52 100%);
+  color: #ffffff;
+  box-shadow:
+    0 0 1.2rem #00d4ff,
+    0 12px 28px rgba(0,0,0,0.65);
+  transform: translateY(-1px);
+}
+
+button:active,
+input[type="submit"]:active{
+  transform: translateY(0);
+  box-shadow:
+    0 0 0.8rem rgba(0, 212, 255, 0.35),
+    0 8px 18px rgba(0,0,0,0.55);
+}
+
+button:disabled,
+input[type="submit"]:disabled{
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+/* Detalles extra: separador suave si lo necesitas */
+.hr-neon{
+  height: 1px;
+  border: 0;
+  margin: 16px 0;
+  background: linear-gradient(90deg, transparent, rgba(0,212,255,0.6), transparent);
+}
+
+/* Responsive: no rompe */
+@media (max-width: 520px){
+  body{ padding: 14px; }
+  form{ padding: 14px; }
+  h1, #siteName{ font-size: 2rem; }
+  button, input[type="submit"]{ font-size: 1.1rem; }
+}

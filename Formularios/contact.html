@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX</title>
+
+</head>
+
+
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MineControlPanel - contacto</title>
+  <link rel="stylesheet" href="../css/form.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header>
+
+
+    <div class="cabecera-texto">
+      <h1 id="nombre">MineControlPanel</h1>
+      <h2>Contacto</h2>
+    </div>
+    <nav>
+      <a href="../AJAX/ajax.html">Players</a>
+      <a href="../Formularios/contact.html" class="activo">Contacto</a>
+    </nav>
+  </header>
+  <main>
+        <video autoplay muted loop class="panorama">
+            <source src="../css/Panoramico.mp4" type="video/mp4">
+        </video>
+    <form id="registroForm" action="#" method="post" novalidate>
+      <fieldset>
+        <legend>Datos de usuario</legend>
+
+        <div class="row">
+          <div>
+            <label for="nombre">Nombre *</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+          <div>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" />
+          </div>
+        </div>
+
+        <label for="usuario">Nombre de usuario *</label>
+        <input type="text" id="usuario" name="usuario" required />
+
+        <div class="row">
+          <div>
+            <label for="pass1">Contraseña *</label>
+            <input type="password" id="pass1" name="pass1" required />
+          </div>
+          <div>
+            <label for="pass2">Repite la contraseña *</label>
+            <input type="password" id="pass2" name="pass2" required />
+          </div>
+        </div>
+        <p id="passError" class="error" aria-live="polite"></p>
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
+        <p id="emailError" class="error" aria-live="polite"></p>
+
+        <label for="direccion">Dirección *</label>
+        <input type="text" id="direccion" name="direccion" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Ubicación</legend>
+
+        <label for="cp">Código Postal *</label>
+        <select id="cp" name="cp" required>
+          <option value="">-- Selecciona un CP --</option>
+          <!-- mínimo 5 CP de al menos 3 provincias -->
+          <option value="28001">28001 (Madrid)</option>
+          <option value="41001">41001 (Sevilla)</option>
+          <option value="29001">29001 (Málaga)</option>
+          <option value="08001">08001 (Barcelona)</option>
+          <option value="46001">46001 (Valencia)</option>
+        </select>
+
+        <p class="hint">Provincia seleccionada: <strong id="provincia">—</strong></p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Intereses *</legend>
+        <p class="hint">Marca entre 2 y 6 intereses.</p>
+
+        <!-- mínimo 8 hobbies -->
+        <label class="inline"><input type="checkbox" name="intereses" value="deporte" /> Deporte</label>
+        <label class="inline"><input type="checkbox" name="intereses" value="musica" /> Música</label>
+        <label class="inline"><input type="checkbox" name="intereses" value="cine" /> Cine</label>
+        <label class="inline"><input type="checkbox" name="intereses" value="videojuegos" /> Videojuegos</label>
+        <label class="inline"><input type="checkbox" name="intereses" value="lectura" /> Lectura</label>
+        <label class="inline"><input type="checkbox" name="intereses" value="viajes" /> Viajes</label>
+        <label class="inline"><input type="checkbox" name="intereses" value="cocina" /> Cocina</label>
+        <label class="inline"><input type="checkbox" name="intereses" value="tecnologia" /> Tecnología</label>
+
+        <p id="interesesError" class="error" aria-live="polite"></p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Comunicaciones</legend>
+
+        <!-- radio: si desea recibir correos -->
+        <p>¿Deseas recibir correos electrónicos?</p>
+        <label class="inline"><input type="radio" name="recibir" id="recibirSi" value="si" checked /> Sí</label>
+        <label class="inline"><input type="radio" name="recibir" id="recibirNo" value="no" /> No</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Términos *</legend>
+
+        <!-- checkbox que confirma términos, con enlace que abre en otra pestaña -->
+        <label>
+          <input type="checkbox" id="acepto" name="acepto" disabled />
+          He leído y acepto los <a id="linkTerminos" href="terminos.html" target="_blank"
+            rel="noopener noreferrer">términos y condiciones</a> *
+        </label>
+        <p class="hint" id="terminosHint">Debes abrir y leer los términos para poder marcar la casilla.</p>
+      </fieldset>
+
+      <button id="Enviar" type="submit">Aceptar</button>
+
+      <p id="resultado" aria-live="polite"></p>
+    </form>
+
+    <script src="formulario.js"></script>
+  </main>
+  <footer>
+    <p>Página creada por Jesús Ponce</p>
+  </footer>
+</body>
+
+</html>
